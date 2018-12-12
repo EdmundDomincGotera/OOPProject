@@ -26,14 +26,16 @@ namespace OOP_Project
             InitializeComponent();
         }
 
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            lstDetails.Items.Add(Customer.GetFullName() + " " + Jewelry.Name);
-        }
+        //private void Window_Loaded(object sender, RoutedEventArgs e)
+        //{
+        //    lstDetails.Items.Add(Customer.GetFullName() + " " + Jewelry.Name);
+        //}
 
         private void TransClick (object sender, RoutedEventArgs e)
         {
-            
+            Add_Customer customer = new Add_Customer();
+            customer.Show();
+            this.Close();
         }
     }
 }

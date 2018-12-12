@@ -49,3 +49,5 @@ C:\Users\EDMGOTERA\OneDrive\OOP_Project\OOP_Project\obj\Debug\OOP_Project.csproj
 C:\Users\EDMGOTERA\OneDrive\OOP_Project\OOP_Project\obj\Debug\OOP_Project.csproj.CoreCompileInputs.cache
 C:\Users\EDMGOTERA\OneDrive\OOP_Project\OOP_Project\obj\Debug\OOP_Project.exe
 C:\Users\EDMGOTERA\OneDrive\OOP_Project\OOP_Project\obj\Debug\OOP_Project.pdb
+C:\Users\EDMGOTERA\OneDrive\OOP_Project\OOP_Project\obj\Debug\Add_Customer.g.cs
+C:\Users\EDMGOTERA\OneDrive\OOP_Project\OOP_Project\obj\Debug\Add_Customer.baml

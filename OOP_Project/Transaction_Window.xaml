@@ -5,13 +5,72 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOP_Project"
         mc:Ignorable="d"
-        Title="Transaction_Window" Height="700" Width="500" Background="#04c582"
-        WindowStartupLocation="CenterScreen" Loaded="Window_Loaded">
-    <Grid>
-        <Border Background="#2e3137" CornerRadius="20" Margin="20">
-            <ListBox Name="lstDetails" Background="#545d6a" HorizontalAlignment="Center" Height="100" Margin="0, 50, 0, 0" VerticalAlignment="Top" Width="200" Foreground="White">
-            </ListBox>
-        </Border>
-        <Button Content="Add Transaction" Width="100" Height="30" HorizontalAlignment="Center" Margin="0,500,0,0" Click="TransClick"/>
+        Title="Transaction_Window" 
+        Height="700" Width="500" 
+        Background="#04c582"
+        WindowStartupLocation="CenterScreen"
+        WindowStyle="None">
+
+    <Grid Background="#2e3137" Margin="20">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="Add Transaction"
+               HorizontalAlignment="Center"
+               Foreground="White" FontSize="30" 
+               Grid.Row="0"
+               Grid.Column="1"/>
+
+        <Label Content="Customer"
+               HorizontalAlignment="Center"
+               Foreground="White" FontSize="18"
+               Grid.Row="2"
+               Grid.Column="0"/>
+        
+        <Label Content="Quantity"
+               HorizontalAlignment="Center"
+               Foreground="White" FontSize="18"
+               Grid.Row="4"
+               Grid.Column="0"/>
+
+        <Label Content="Price"
+               HorizontalAlignment="Center"
+               Foreground="White" FontSize="18"
+               Grid.Row="6"
+               Grid.Column="0"/>
+
+        <Label Content="Promised Date"
+               HorizontalAlignment="Center"
+               Foreground="White" FontSize="18"
+               Grid.Row="8"
+               Grid.Column="0"/>
+
+        <Button Content="Add Customer"
+                HorizontalAlignment="Center"
+                Width="100" Height="30"
+                Click="TransClick"
+                Grid.Row="11"
+                Grid.Column="1"/>
+        
+        
     </Grid>
 </Window>

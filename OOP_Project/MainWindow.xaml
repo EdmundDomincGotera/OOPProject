@@ -5,36 +5,54 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOP_Project"
         mc:Ignorable="d"
-        Title="Login" Height="700" Width="500" FontSize="12" Background="#04c582"
+        Title="Main" Height="700" Width="500" FontSize="12" Background="#04c582"
         WindowStartupLocation="CenterScreen">
 
 
     <Grid>
+        
         <Border Background="#2e3137" CornerRadius="20" Margin="20">
+            
             <StackPanel Margin="20">
-                <Label Content="Login" Foreground="White" FontSize="25" HorizontalAlignment="Center"/>
+                <Label Content="Main" 
+                       Foreground="White" 
+                       FontSize="50" 
+                       HorizontalAlignment="Center"/>
+                
                 <Separator></Separator>
             </StackPanel>
+            
         </Border>
-        <Label Content="First Name" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 100, 0, 0"/>
-        <Label Content="Middle Name" Foreground="White" HorizontalAlignment="Center" Margin="0, 160, 0, 0" VerticalAlignment="Top" RenderTransformOrigin="0.543,-0.635"/>
-        <Label Content="Last Name" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 220, 0, 0"/>
-        <Label Content="Birthdate" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 280, 0, 0"/>
-        <DatePicker Name="dpBirthday" Background="#545d6a" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 310, 0, 0"/>
-        <Label Content="Address" Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0, 350, 0, 0"/>
-        <TextBox Name="txtAddress" Background="#545d6a" HorizontalAlignment="Center" Height="23" Margin="0, 380, 0, 0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Label Content="Jewelry" Foreground="White" HorizontalAlignment="Center" Margin="0, 410, 0, 0" VerticalAlignment="Top" RenderTransformOrigin="-8.088,-0.665"/>
-        <Label Content="Quanity" Foreground="White" HorizontalAlignment="Center" Margin="0, 470, 0, 0" VerticalAlignment="Top" RenderTransformOrigin="-8.088,-0.665"/>
-        <TextBox Name="txtQuantity" Background="#545d6a" HorizontalAlignment="Center" Height="22" Margin="0, 500, 0, 0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="txtFirstName" Background="#545d6a" HorizontalAlignment="Center" Height="23" Margin="0, 130, 0, 0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="txtMiddleName" Background="#545d6a" HorizontalAlignment="Center" Height="23" Margin="0, 190, 0, 0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox Name="txtLastName" Background="#545d6a" HorizontalAlignment="Center" Height="23" Margin="0, 250, 0, 0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button Content="Add Transaction" HorizontalAlignment="Center" Margin="0, 560, 0, 0" VerticalAlignment="Top" Width="100" Click="Button_Click" Height="30"/>
-        <ComboBox Name="cmbJewelry" Background="#545d6a" HorizontalAlignment="Center" Margin="0, 440, 0, 0" VerticalAlignment="Top" Width="120" SelectionChanged="ComboBox_SelectionChanged">
-            <ComboBoxItem Content="Necklace"/>
-            <ComboBoxItem Content="Bracelet"/>
-            <ComboBoxItem Content="Earrings"/>
-            <ComboBoxItem Content="Rings"/>
-        </ComboBox>
+        
+        <Button Content="Add Transaction" 
+                HorizontalAlignment="Center" 
+                Margin="0, 160, 0, 0" 
+                VerticalAlignment="Top" 
+                Width="100" Click="Button_Click" 
+                Height="30"/>
+        
+        <Button Content="Inventory" 
+                HorizontalAlignment="Center" 
+                Margin="0, 210, 0, 0" 
+                VerticalAlignment="Top" 
+                Width="100" Click="Button_Click" 
+                Height="30"/>
+        
+        <Border Background="Gray" 
+                Height="300" Width="350" 
+                CornerRadius="20" 
+                Margin="0, 250, 0, 0">
+            
+            <StackPanel Margin="20">
+                
+                <Label Content="Transactions" 
+                       Foreground="White" 
+                       FontSize="25" 
+                       HorizontalAlignment="Center"/>
+                <Separator></Separator>
+                
+            </StackPanel>
+            
+        </Border>
     </Grid>
 </Window>
