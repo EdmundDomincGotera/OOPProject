@@ -33,7 +33,9 @@ namespace OOP_Project
 
         private void TransClick (object sender, RoutedEventArgs e)
         {
-            
+            Add_Customer customer = new Add_Customer();
+            customer.Show();
+            this.Close();
         }
     }
 }

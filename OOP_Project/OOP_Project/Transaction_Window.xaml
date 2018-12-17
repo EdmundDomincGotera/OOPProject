@@ -5,30 +5,118 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:OOP_Project"
         mc:Ignorable="d"
-        Title="Transaction_Window" Height="700" Width="500" Background="#04c582"
-        WindowStartupLocation="CenterScreen" Loaded="Window_Loaded"
+        Title="Transaction_Window" 
+        Height="700" Width="500" 
+        Background="#04c582"
+        WindowStartupLocation="CenterScreen"
         WindowStyle="None">
 
     <Grid Background="#2e3137" Margin="20">
+
         <Grid.RowDefinitions>
             <RowDefinition Height="60"/>
             <RowDefinition Height="30"/>
             <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="30"/>
         </Grid.RowDefinitions>
 
-        <Label Content="Add Transaction"
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Label Content="       Add Transaction"
                HorizontalAlignment="Center"
                Foreground="White" FontSize="30" 
-               Grid.Row="0"
+               Grid.Row="0" Grid.ColumnSpan="3" Margin="52,0,64,0" Width="336"/>
+
+        <Label Content="Customer"
+               HorizontalAlignment="Center"
+               Foreground="White" FontSize="18"
+               Grid.Row="2"
+               Grid.Column="0"/>
+
+        <ComboBox Name="cmbCustomer"
+                HorizontalAlignment="Center"
+                Foreground="White" Height="30"
+                Width="150" Grid.Row="2"
+                Grid.Column="1">
+            <ComboBoxItem Content="hehe"/>
+            </ComboBox>
+
+            <Label Content="Product"
+               HorizontalAlignment="Center"
+               Foreground="White" FontSize="18"
+               Grid.Row="4"
+               Grid.Column="0"/>
+
+        <ComboBox Name="cmbProduct"
+                HorizontalAlignment="Center"
+                Foreground="White" Height="30"
+                Width="150" Grid.Row="4"
+                Grid.Column="1">
+            <ComboBoxItem Content="Necklace"/>
+            <ComboBoxItem Content="Bracelet"/>
+            <ComboBoxItem Content="Earrings"/>
+            <ComboBoxItem Content="Rings"/>
+        </ComboBox>
+
+        <Label Content="Quantity"
+               HorizontalAlignment="Center"
+               Foreground="White" FontSize="18"
+               Grid.Row="6"
+               Grid.Column="0"/>
+        
+        <Label Content="Price"
+               HorizontalAlignment="Center"
+               Foreground="White" FontSize="18"
+               Grid.Row="8"
+               Grid.Column="0"/>
+
+        <Label Content="Promised Date"
+               HorizontalAlignment="Center"
+               Foreground="White" FontSize="18"
+               Grid.Row="10"
                Grid.Column="0"/>
 
 
+        <TextBox Name="Quantity"
+                HorizontalAlignment="Center"
+                Foreground="White" Height="30"
+                Width="150" Grid.Row="6"
+                Grid.Column="1"/>
 
-        <!--<Label Content="Customer" 
-               FontSize="20" Foreground="White" HorizontalAlignment="Left" 
-               VerticalAlignment="Top" Margin="100, 100, 0, 0 "/>
-        <Button Content="Add Transaction" 
-                Width="100" Height="30" HorizontalAlignment="Center" 
-                Margin="0,500,0,0" Click="TransClick"/>-->
+        <TextBox Name="Price"
+                HorizontalAlignment="Center"
+                Foreground="White" Height="30"
+                Width="150" Grid.Row="8"
+                Grid.Column="1"/>
+
+        <DatePicker Name="dpPromisedDate"
+                HorizontalAlignment="Center"
+                Foreground="White" Height="30"
+                Width="150" Grid.Row="10"
+                Grid.Column="1"/>
+
+        <Button Content="Add Customer"
+                HorizontalAlignment="Center"
+                Width="150" Height="30"
+                Click="TransClick"
+                Grid.Row="2"
+                Grid.Column="3"/>
+
     </Grid>
 </Window>

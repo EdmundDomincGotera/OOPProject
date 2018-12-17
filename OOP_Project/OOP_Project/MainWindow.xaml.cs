@@ -29,7 +29,7 @@ namespace OOP_Project
         {
             Transaction_Window trans = new Transaction_Window();
             trans.Show();
-            trans.Close();
+            this.Close();
 
         }
         private void ComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)

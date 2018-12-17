@@ -10,28 +10,49 @@
 
 
     <Grid>
+        
         <Border Background="#2e3137" CornerRadius="20" Margin="20">
+            
             <StackPanel Margin="20">
-                <Label Content="Main" Foreground="White" FontSize="50" HorizontalAlignment="Center"/>
+                <Label Content="Main" 
+                       Foreground="White" 
+                       FontSize="50" 
+                       HorizontalAlignment="Center"/>
+                
                 <Separator></Separator>
             </StackPanel>
+            
         </Border>
         
         <Button Content="Add Transaction" 
-                HorizontalAlignment="Center" Margin="0, 160, 0, 0" 
-                VerticalAlignment="Top" Width="100" Click="Button_Click" Height="30"/>
+                HorizontalAlignment="Center" 
+                Margin="0, 160, 0, 0" 
+                VerticalAlignment="Top" 
+                Width="100" Click="Button_Click" 
+                Height="30"/>
+        
         <Button Content="Inventory" 
-                HorizontalAlignment="Center" Margin="0, 210, 0, 0" 
-                VerticalAlignment="Top" Width="100" Click="Button_Click" Height="30"/>
+                HorizontalAlignment="Center" 
+                Margin="0, 210, 0, 0" 
+                VerticalAlignment="Top" 
+                Width="100" Click="Button_Click" 
+                Height="30"/>
+        
         <Border Background="Gray" 
-                Height="300" Width="350" CornerRadius="20" 
+                Height="300" Width="350" 
+                CornerRadius="20" 
                 Margin="0, 250, 0, 0">
+            
             <StackPanel Margin="20">
+                
                 <Label Content="Transactions" 
-                       Foreground="White" FontSize="25" 
+                       Foreground="White" 
+                       FontSize="25" 
                        HorizontalAlignment="Center"/>
                 <Separator></Separator>
+                
             </StackPanel>
+            
         </Border>
     </Grid>
 </Window>

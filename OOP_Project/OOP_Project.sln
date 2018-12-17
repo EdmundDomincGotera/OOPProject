@@ -5,6 +5,12 @@ VisualStudioVersion = 15.0.28010.2041
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OOP_Project", "OOP_Project\OOP_Project.csproj", "{B3603F5A-CF4C-4E16-B0EA-6E9B2A61E27A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Person", "Person", "{012508AD-EAB7-4F79-889A-D8A907783547}"
+	ProjectSection(SolutionItems) = preProject
+		OOP_Project\Person.cs = OOP_Project\Person.cs
+		OOP_Project\Product.cs = OOP_Project\Product.cs
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

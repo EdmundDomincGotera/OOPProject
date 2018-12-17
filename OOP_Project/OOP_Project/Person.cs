@@ -22,15 +22,22 @@ namespace OOP_Project
         }
         public string GetFullName()
         {
-            FirstName = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(FirstName.ToLower());
-            MiddleName = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(MiddleName.ToLower());
-            LastName = System.Threading.Thread.CurrentThread.CurrentCulture.TextInfo.ToTitleCase(LastName.ToLower());
-            return FirstName + " " + LastName + ". " + MiddleName;
+            return String.Format("{0} (1}, {2}", FirstName, MiddleName[0], LastName);
         }
 
         public int GetAge()
         {
             return Calculations.CalculateAge(Birthday, true);
+        }
+
+        private string FormatName(string name)
+        {
+            name = name.ToLower();
+            string[] names = name.Split(' ');
+            string formattedName = "";
+            for (int counter = 0; counter < names.Length; counter++)
+                formattedName = formattedName + char.ToUpper(names[counter][0]) + names[counter].Substring(1) + " ";
+            return formattedName.Remove(formattedName.Length - 1);
         }
     }
 }
